@@ -1,5 +1,7 @@
-                <h1>Picture Fetcher Microservice</h1>
-                
+<h1>
+                    <i class="far fa-images" style="font-size:48px;color:forestgreen"></i>
+                    Picture Fetcher Microservice</h1>
+                <hr>
                 <p>This is a simple service built with SpringBoot and PostgreSQL that will retrieve some
                     of my favorite vacation pictures based on a given location.
                     <br>The service will return a JSON with
