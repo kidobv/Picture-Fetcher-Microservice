@@ -25,7 +25,7 @@ public class PictureService {
             }
         }
         catch (Exception e){
-           throw new ResourceNotFoundException("Unable to find pictures for the given location: " + pictureLocation);
+           throw new ResourceNotFoundException("Unable to find pictures for the given location: " + e);
         }
         return pictures;
     }
