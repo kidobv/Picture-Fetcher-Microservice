@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Picture Fetcher</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
-        <link href="style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <title>Picture Fetcher</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
 
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <h1>
-                    <i class="far fa-images" style="font-size:48px;color:forestgreen"></i>
-                    Picture Fetcher Microservice</h1>
-                <hr>
-                <p>This is a simple service built with SpringBoot and PostgreSQL that will retrieve some
-                    of my favorite vacation pictures from one of the four locations listed below.
-                    <br>The service will return a JSON
-                    with a list of Picture objects that belong to the location given as parameter.</p>
-                <h3>Valid Locations are:</h3>
-                <ul>
-                    <li>PuertoRico</li>
-                    <li>Usa</li>
-                    <li>Iceland</li>
-                    <li>Spain</li>
-                </ul>
-                <h3>Usage Example</h3>
-                <p>Try making a request to the following endpoint: <b>https://picsfetcher-microservice.herokuapp.com/pictures/vacation/<mark>{location}</mark></b></p>
-                <h3>Sample Response JSON</h3>
-                <p><mark>{
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <h1>
+                <i class="far fa-images" style="font-size:48px;color:forestgreen"></i>
+                Picture Fetcher Microservice</h1>
+            <hr>
+            <p>This is a simple service built with SpringBoot and PostgreSQL that will retrieve some
+                of my favorite vacation pictures from one of the four locations listed below.
+                <br>The service will return a JSON
+                with a list of Picture objects that belong to the location given as parameter.</p>
+            <h3>Valid Locations are:</h3>
+            <ul>
+                <li>PuertoRico</li>
+                <li>Usa</li>
+                <li>Iceland</li>
+                <li>Spain</li>
+            </ul>
+            <h3>Usage Example</h3>
+            <p>Try making a request to the following endpoint:</p>
+                https://picsfetcher-microservice.herokuapp.com/pictures/vacation/<mark>{location}</mark>
+            <h3>Sample Response JSON</h3>
+            <p><mark>{
                 <br>"sourceUrl": "https://picsfetcher.s3.amazonaws.com/151556.jpg",
                 <br>"title": "Window Cave",
                 <br>"description": "Cueva ventana en Arecibo PR",
                 <br>"geoLocation": "PUERTORICO",
                 <br>"category": "Scenery"
                 <br>}</mark>
-                </p>
-            </div>
+            </p>
         </div>
     </div>
-    </body>
-    <footer style="text-align: center">
-        <p>Github
-            <a href="https://github.com/kidobv/Picture-Fetcher-Microservice" target="_blank">
-                Repo <span class="fab fa-github"></span>
-            </a>
-        </p>
-    </footer>
+</div>
+</body>
+<footer style="text-align: center">
+    <p>Github
+        <a href="https://github.com/kidobv/Picture-Fetcher-Microservice" target="_blank">
+            Repo <span class="fab fa-github"></span>
+        </a>
+    </p>
+</footer>
 </html>
